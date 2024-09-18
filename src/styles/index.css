@@ -1,12 +1,83 @@
+body {
+    background-color: #f3ecb8;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .app-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(5, 222, 238, 0.986);
+    border-top: 5px solid #ff00f2;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffbb00;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #ff00f2;
+  }
+  
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border-left: 5px solid #ff00f2;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .todo-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .todo-item span {
+    font-size: 1.2rem;
+    color: #050505;
+  }
+  
+ 
+  .delete-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-left: 15px;
+  }
+  
+  .todo-item:hover .delete-btn {
+    display: inline;
+  }
+  
+  
+  
